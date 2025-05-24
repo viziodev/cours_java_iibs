@@ -5,6 +5,11 @@ public abstract class Figure {
     public  abstract int perimetre();
     public abstract int surface();
 
+    protected TypeFigure type;
+
+    public TypeFigure getType() {
+        return type;
+    }
     protected Figure() {
     }
 

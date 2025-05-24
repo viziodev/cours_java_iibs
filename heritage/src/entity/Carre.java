@@ -6,15 +6,18 @@ public   class Carre extends Figure {
     public Carre(int cote) {
         this.cote = cote;
         diagonale =(int)Math.sqrt(Math.pow(cote, 2)*2);
+        this.type=TypeFigure.CARRE;
     }
 
     public Carre() {
         super();//Figure()
+        this.type=TypeFigure.CARRE;
 
     }
 
     public int getCote() {
         return cote;
+        
     }
 
     public void setCote(int cote) {
